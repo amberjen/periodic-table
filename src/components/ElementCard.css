@@ -100,4 +100,9 @@
   bottom: -2.5%;
   transform: translateX(-50%);
   font-size: .825rem;
+  cursor: pointer;
+}
+
+.btn-close:focus {
+  outline: none;
 }

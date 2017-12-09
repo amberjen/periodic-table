@@ -2,7 +2,6 @@
   "name": "periodic-table",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://amberjen.github.io/periodic-table",
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "react-scripts": "1.0.17"
