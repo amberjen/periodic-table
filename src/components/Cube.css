@@ -1,0 +1,36 @@
+.element-cube {
+  border: 1px solid rgba(255, 255, 255, .3);
+  width: 65px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .05s;
+}
+
+.element-cube:hover {
+  transform: scale(1.25);
+}
+
+.element-cube p {
+  line-height: 1.15;
+  margin-bottom: 0;
+}
+
+.element-cube .number {
+  font-size: .6rem;
+}
+
+.element-cube .symbol {
+  font-size: 1.25rem;
+}
+
+.element-cube .name {
+  font-size: .6rem;
+}
+
+.element-cube .atomic-mass {
+  font-size: .6rem;
+}

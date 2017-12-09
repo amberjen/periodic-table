@@ -1,0 +1,30 @@
+.legend-box {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, .25);
+  padding: 1rem 1.5rem;
+
+  /* ---- TEMP ---- */
+  left: 20%;
+  top: 12%;
+}
+
+.legend-content {
+  display: flex;
+}
+
+.legend-content ul {
+  list-style: none;
+  font-size: .75rem;
+  -webkit-padding-start: 0;
+  margin-bottom: 0;
+}
+
+.legend-content ul:nth-child(2) {
+  margin: 0 2rem;
+}
+
+.legend-content ul li {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}

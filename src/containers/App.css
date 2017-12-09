@@ -1,0 +1,69 @@
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+  background: #2c303b;
+}
+
+/* ================================ */
+/*              Header              */
+/* ================================ */
+header {
+  height: 8%;
+  padding: .5rem 1.5rem;
+}
+
+header .classic-word {
+  font-style: italic;
+  font-family: serif;
+}
+
+/* ================================ */
+/*           Main Section           */
+/* ================================ */
+.main-section {
+  height: 88%;
+  display: flex;
+  position: relative;
+}
+
+/* ------- Periodic Table ------- */
+.periodic-table {
+  width: 100%;
+  padding: .5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.periodic-table .main-table {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.periodic-table .sub-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.periodic-table .sub-table .table-row {
+  display: flex;
+}
+
+
+/* ================================ */
+/*              Footer              */
+/* ================================ */
+footer {
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .825rem;
+  color: rgba(250, 250, 250, .5);
+}

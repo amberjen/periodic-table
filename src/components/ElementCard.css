@@ -1,0 +1,103 @@
+.element-card {
+  position: absolute;
+  right: 1.5%;
+  bottom: 5.5%;
+  width: 400px;
+  background: rgba(250, 250, 250, .95);
+  box-shadow: 4px 5px 7px rgba(10, 10, 10, .25);
+  color: #313439;
+  padding: 1.25rem;
+  line-height: 1.15;
+  font-size: .875rem;
+  border-radius: 4px;
+  cursor: move;
+}
+
+.element-card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element-card .card-header .drag-here {
+  background: rgba(54, 59, 73, .1);
+  color: rgba(54, 59, 73, .51);
+  font-style: italic;
+  font-size: .825rem;
+  margin-bottom: 0;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  line-height: 1;
+}
+
+.element-card .symbol-box {
+  border: 2px solid #313439;
+  width: 55px;
+  height: 55px;
+  font-size: 1.65rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.element-card p {
+  margin-bottom: 0;
+}
+
+.element-card table {
+  border: 1px solid rgba(54, 59, 73, .1);
+}
+
+.element-card table tbody th,
+.element-card table tbody td {
+  padding: .35rem .5rem;
+  vertical-align: top;
+}
+
+.element-card table tbody tr:nth-child(2n) th,
+.element-card table tbody tr:nth-child(2n) td {
+  background: rgba(54, 59, 73, .075);
+}
+
+.element-card table tbody th {
+  width: 40%;
+}
+
+.element-card table tbody td:not(.summary) {
+  text-align: right;
+  width: 60%;
+}
+
+.element-card table tbody td.summary {
+  padding: .5rem .5rem;
+}
+
+.element-card table tbody td.category::first-letter,
+.element-card table tbody td.appearance::first-letter {
+  text-transform: capitalize;
+}
+
+.helper-box {
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.btn-close {
+  position: absolute;
+  border: none;
+  background: rgba(54, 59, 73, 1);
+  box-shadow: 2px 2px 4px rgba(10, 10, 10, .4);
+  color: #fafafa;
+  width: 82px;
+  height: 28px;
+  border-radius: 25px;
+  left: 50%;
+  bottom: -2.5%;
+  transform: translateX(-50%);
+  font-size: .825rem;
+}
