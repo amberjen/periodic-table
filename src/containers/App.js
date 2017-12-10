@@ -46,7 +46,6 @@ class App extends Component {
   }
 
 
-
   render() {
 
     const { targetElement, showCard } = this.state;
@@ -57,11 +56,10 @@ class App extends Component {
         <section className="main-section">
           <Legend />
           <PeriodicTable showElementCard={this.showElementCard} />
-          { showCard ?
+          { showCard &&
             <ElementCard
               targetElement={targetElement}
-              hideElementCard={this.hideElementCard} />
-            : console.log('not yet')}
+              hideElementCard={this.hideElementCard} /> }
         </section>
         <Footer />
       </div>

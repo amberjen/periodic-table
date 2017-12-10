@@ -3,13 +3,6 @@ import data from '../Elements.json';
 import Cube from '../components/Cube';
 
 class PeriodicTable extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-
-  }
 
   render() {
 
