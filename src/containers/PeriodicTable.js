@@ -36,27 +36,27 @@ class PeriodicTable extends Component {
     ]
 
     function getElementInfo(group) {
-      const tmp = [];
-      let newTmp;
+      const originalGroupElements = [];
+      let finalGroupElements;
 
       group.forEach( atomicNumber => {
 
         let matchedItem = data.elements.filter(obj => obj.number === atomicNumber);
 
-        tmp.push(matchedItem)
-        newTmp = tmp.reduce( (a, b) => a.concat(b), [])
+        originalGroupElements.push(matchedItem)
+        finalGroupElements = originalGroupElements.reduce( (a, b) => a.concat(b), [])
 
       })
 
-      return newTmp;
+      return finalGroupElements;
     }
 
 
     const renderCube = group => {
-      const anotherTmp = getElementInfo(group);
+      const groupElements = getElementInfo(group);
 
       return (
-        anotherTmp.map( el =>
+        groupElements.map( el =>
           <Cube
             key={el.number}
             number={el.number}
