@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { categoryColor } from '../utils';
 import './Cube.css';
 
@@ -21,5 +22,14 @@ const Cube = (props) => {
     </a>
   )
 }
+
+Cube.propTypes = {
+  number: PropTypes.number,
+  name: PropTypes.string,
+  symbol: PropTypes.string,
+  atomicMass: PropTypes.number,
+  category: PropTypes.string,
+  showElementCard: PropTypes.func
+};
 
 export default Cube;

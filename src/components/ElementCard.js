@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Draggable from 'react-draggable';
 import './ElementCard.css';
 
@@ -90,5 +91,10 @@ const ElementCard = ({targetElement, hideElementCard}) => {
     </Draggable>
   )
 }
+
+ElementCard.propTypes = {
+  targetElement: PropTypes.object,
+  hideElementCard: PropTypes.func
+};
 
 export default ElementCard;

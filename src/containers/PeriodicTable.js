@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import data from '../Elements.json';
 import Cube from '../components/Cube';
 
@@ -97,7 +98,10 @@ class PeriodicTable extends Component {
     )
   }
 
-
 }
+
+PeriodicTable.propTypes = {
+  showElementCard: PropTypes.func,
+};
 
 export default PeriodicTable;
