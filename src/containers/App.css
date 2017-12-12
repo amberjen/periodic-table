@@ -16,6 +16,10 @@ header {
   padding: .5rem 1.5rem;
 }
 
+header h2 {
+  font-family: 'Impact';
+}
+
 header .classic-word {
   font-style: italic;
   font-family: serif;
